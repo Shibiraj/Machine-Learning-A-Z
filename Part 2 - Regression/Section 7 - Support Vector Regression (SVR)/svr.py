@@ -27,6 +27,8 @@ regressor = SVR(kernel = 'rbf')
 regressor.fit(X, y)
 
 # Predicting a new result
+# Inverts the feature scaling. Invert of standard scalar
+
 y_pred = regressor.predict(6.5)
 y_pred = sc_y.inverse_transform(y_pred)
 

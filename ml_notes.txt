@@ -37,10 +37,25 @@ Regression
 
 			Gradient descent is a generic optimization algorithm used in many machine learning algorithms. It iteratively tweaks the parameters of the model in order to minimize the cost function. The steps of gradient descent is outlined below.
 
-
-
 COde
 For generating random dataset
 	np.random.seed(0)
 	x = np.random.rand(100, 1)
 	y = 2 + 3 * x + np.random.rand(100, 1)
+
+
+Non Linear regression
+
+SVR (Support Vector Regression)
+Which is a Non Linear regression model.
+Exceptional case is there, force the CEO the point is considered as the outlier point.
+
+
+
+Decision Tree Intuition
+
+CART : Classification And Regression Tree
+Non continuos regrssion model
+information entropy
+
+Split the graph into multiple parts say segments. Then each segments we will take the average and find out to which segment the predicted value belongs.

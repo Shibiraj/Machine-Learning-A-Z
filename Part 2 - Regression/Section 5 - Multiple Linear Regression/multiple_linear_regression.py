@@ -11,8 +11,8 @@ X = dataset.iloc[:, :-1].values
 y = dataset.iloc[:, 4].values
 
 # Encoding categorical data
-from sklearn.preprocessing import LabelEncoder, OneHotEncoder
-labelencoder = LabelEncoder()
+from sklearn.preprocessing import LabelEncoder, OneHotEncoder, StandardScaler
+scalar = StandardScaler()
 X[:, 3] = labelencoder.fit_transform(X[:, 3])
 onehotencoder = OneHotEncoder(categorical_features = [3])
 X = onehotencoder.fit_transform(X).toarray()
